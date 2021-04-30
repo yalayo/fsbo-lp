@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "rsarnik-terraform-state"
-    key    = "_project_name_"
+    key    = "fsbo-lp"
     region = "us-east-1"
   }
 }
