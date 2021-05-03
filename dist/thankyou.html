@@ -20,7 +20,6 @@
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js" type="0fc249cfa07c12c1022d96e9-text/javascript"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" type="0fc249cfa07c12c1022d96e9-text/javascript"></script>
 
-<link rel="shortcut icon" type="image/x-icon" href="https://pages.convertkit.com/templates/favicon.ico" />
 <style>
           body { margin: 0; padding: 0 }
           body > .formkit-form { margin: 80px auto; }
@@ -29,6 +28,10 @@
         
         </style>
 <script type="0fc249cfa07c12c1022d96e9-text/javascript">!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?n():"function"==typeof define&&define.amd?define(n):n()}(0,function(){"use strict";function e(e){var n=this.constructor;return this.then(function(t){return n.resolve(e()).then(function(){return t})},function(t){return n.resolve(e()).then(function(){return n.reject(t)})})}function n(){}function t(e){if(!(this instanceof t))throw new TypeError("Promises must be constructed via new");if("function"!=typeof e)throw new TypeError("not a function");this._state=0,this._handled=!1,this._value=undefined,this._deferreds=[],u(e,this)}function o(e,n){for(;3===e._state;)e=e._value;0!==e._state?(e._handled=!0,t._immediateFn(function(){var t=1===e._state?n.onFulfilled:n.onRejected;if(null!==t){var o;try{o=t(e._value)}catch(f){return void i(n.promise,f)}r(n.promise,o)}else(1===e._state?r:i)(n.promise,e._value)})):e._deferreds.push(n)}function r(e,n){try{if(n===e)throw new TypeError("A promise cannot be resolved with itself.");if(n&&("object"==typeof n||"function"==typeof n)){var o=n.then;if(n instanceof t)return e._state=3,e._value=n,void f(e);if("function"==typeof o)return void u(function(e,n){return function(){e.apply(n,arguments)}}(o,n),e)}e._state=1,e._value=n,f(e)}catch(r){i(e,r)}}function i(e,n){e._state=2,e._value=n,f(e)}function f(e){2===e._state&&0===e._deferreds.length&&t._immediateFn(function(){e._handled||t._unhandledRejectionFn(e._value)});for(var n=0,r=e._deferreds.length;r>n;n++)o(e,e._deferreds[n]);e._deferreds=null}function u(e,n){var t=!1;try{e(function(e){t||(t=!0,r(n,e))},function(e){t||(t=!0,i(n,e))})}catch(o){if(t)return;t=!0,i(n,o)}}var c=setTimeout;t.prototype["catch"]=function(e){return this.then(null,e)},t.prototype.then=function(e,t){var r=new this.constructor(n);return o(this,new function(e,n,t){this.onFulfilled="function"==typeof e?e:null,this.onRejected="function"==typeof n?n:null,this.promise=t}(e,t,r)),r},t.prototype["finally"]=e,t.all=function(e){return new t(function(n,t){function o(e,f){try{if(f&&("object"==typeof f||"function"==typeof f)){var u=f.then;if("function"==typeof u)return void u.call(f,function(n){o(e,n)},t)}r[e]=f,0==--i&&n(r)}catch(c){t(c)}}if(!e||"undefined"==typeof e.length)throw new TypeError("Promise.all accepts an array");var r=Array.prototype.slice.call(e);if(0===r.length)return n([]);for(var i=r.length,f=0;r.length>f;f++)o(f,r[f])})},t.resolve=function(e){return e&&"object"==typeof e&&e.constructor===t?e:new t(function(n){n(e)})},t.reject=function(e){return new t(function(n,t){t(e)})},t.race=function(e){return new t(function(n,t){for(var o=0,r=e.length;r>o;o++)e[o].then(n,t)})},t._immediateFn="function"==typeof setImmediate&&function(e){setImmediate(e)}||function(e){c(e,0)},t._unhandledRejectionFn=function(e){void 0!==console&&console&&console.warn("Possible Unhandled Promise Rejection:",e)};var l=function(){if("undefined"!=typeof self)return self;if("undefined"!=typeof window)return window;if("undefined"!=typeof global)return global;throw Error("unable to locate global object")}();"Promise"in l?l.Promise.prototype["finally"]||(l.Promise.prototype["finally"]=e):l.Promise=t});</script>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
 </head>
 <body data-template="Cedar">
 <div id="container">
@@ -44,12 +47,21 @@
                                                 <h1>Thank you and Congratulations</h1>
                                         </div>
 
-                                        <div class="formkit-subheader" data-element="subheader" style="color: rgb(102, 102, 102);"><h2>Your free copy of the "Lane Method" to successfully <strong>SELL YOUR HOME YOURSELF </strong>is on its way to you.  Buy following the 5 steps, you can join the hundreds of successful people who have done so and saved thousands.<br>​<br>The Real Estate industry wants to make you think the process is very complicated and that you need to use their services.  Of course you can do that but it is not necessary.<br>​<br>In the report I have given you <strong>ALL the steps </strong>to complete the sale. <strong>I have held nothing back</strong>; however if you feel you need more help or have questions, I will work with you personally, coaching you though the entire process, for a fraction of a Real Estate commission.  I am only a free Zoom or phone call away. </h2></div>     
+                                        <div class="formkit-subheader" data-element="subheader" style="color: rgb(102, 102, 102);">
+                                                <h2>Your free copy of the "Lane Method" to successfully <strong>SELL YOUR HOME YOURSELF </strong>is on its way to you. By following its 5 steps, you can join the hundreds of people who have successfully done so and saved thousands.
+                                                        <br>​<br>The Real Estate industry wants you to think the process is very complicated, so they can earn their excessive commissions. Of course you can do that but you can also do it on your own and save thousands.
+                                                        <br>​<br>In the report I have given you <strong>ALL the steps </strong>to complete the sale. <strong>I have held nothing back</strong> so you can start doing it on your own right now, however; if you feel you need more clarification or have other questions, I will work with you personally, coaching you through the entire process, for a fraction of a Real Estate commission. I am only a free Zoom or phone call away. 
+                                                </h2>
+                                        </div>     
                                 </div>
                         
                                 <div class="formkit-card" style="background-color: rgb(255, 255, 255);"><div class="formkit-heading formkit-heading-tertiary" data-element="form_header" style="color: rgb(17, 17, 17); font-weight: 400;">
-                                        <h2>To book your free personal Zoom or phone call.  Choose a time and date in the calendar below and I will contact you to discuss your personal needs and answer your questions. Don't wait as slots can fill up quickly.</h2>
+                                        <h2>To book your free personal Zoom or Phone call choose a time and date in the calendar attached and I will contact you to discuss your specific needs and answer your questions.  Don’t wait as I can only engage with a limited number of people at a time.</h2>
                                 </div>
+
+                                <div class="formkit-subheader">
+                                        <p>Schedule <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/coachman/60min'});return false;"> time with me</a></p>  
+                                </div>   
                         </div>
                 </div>
         </header>
