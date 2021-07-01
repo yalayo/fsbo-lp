@@ -1,5 +1,5 @@
 locals {
-  s3_origin_id = "fsbo-lp"
+  s3_origin_id = "fsbo-lp-1"
 }
 
 resource "aws_cloudfront_origin_access_identity" "origin_id" {
