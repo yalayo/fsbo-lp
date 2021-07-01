@@ -9,7 +9,7 @@
         "s3:GetObject"
       ],
       "Resource": [
-        "arn:aws:s3:::fsbo-lp/*"
+        "arn:aws:s3:::fsbo-lp-1/*"
       ]
     }
   ]
